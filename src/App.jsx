@@ -1,23 +1,13 @@
 import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import LoginPage from "./components/pages/LoginPage";
 
 function App() {
-  // state (état, données)
-  const [prenom, setPrenom] = useState("Mathis");
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
-  // comportements
-  const handleClick = () => {
-    setCount(count + 1);
-  };
-
-  // affichage (render)
-  return (
-    <div>
-      <h1>Bonjour {prenom}</h1>
-      <p>{count}</p>
-      <button onClick={handleClick}>Incrémenter</button>
-    </div>
-  );
+  return <LoginPage />;
 }
 
 export default App;
