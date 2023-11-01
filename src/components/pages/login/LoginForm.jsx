@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { BsPersonCircle } from "react-icons/bs";
 import { IoChevronForward } from "react-icons/io5";
+import Input from "./Input";
 
 export default function LoginForm() {
   // state
@@ -26,16 +26,14 @@ export default function LoginForm() {
       <h1>Bienvenue chez nous !</h1>
       <hr />
       <h2>Connectez-vous</h2>
-      <div className="input-with-icon">
-        <BsPersonCircle className="icon" />
-        <input
-          value={inputValue}
-          onChange={handleChange}
-          type="text"
-          placeholder="Entrez votre prénom"
-          required
-        />
-      </div>
+
+      <Input
+        value={inputValue}
+        onChange={handleChange}
+        placeholder={"Entrez votre prénom"}
+        required
+      />
+
       <button className="button-with-icon">
         <span>Accéder à mon espace</span>
         <IoChevronForward className="icon" />
