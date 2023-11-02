@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Input({ value, onChange, Icon, ...restProps }) {
+export default function TextInput({ value, onChange, Icon, ...restProps }) {
   return (
     <InputStyled>
       {Icon && Icon}
@@ -27,6 +27,7 @@ const InputStyled = styled.div`
     border: none;
     font-size: 15px;
     color: #17161a;
+    width: 100%;
   }
 
   &::placeholder {
