@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 
 export default function LoginForm() {
   // state
@@ -28,10 +29,10 @@ export default function LoginForm() {
         value={inputValue}
         onChange={handleChange}
         type="text"
-        placeholder="Entrez votre prénom..."
+        placeholder="Entrez votre prénom"
         required
       />
-      <button>Accédez à votre espace</button>
+      <button>Accéder à mon espace</button>
     </form>
   );
 }
