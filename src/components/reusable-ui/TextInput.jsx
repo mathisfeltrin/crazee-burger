@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Input({ value, onChange, Icon, ...otherProps }) {
+export default function TextInput({ value, onChange, Icon, ...otherProps }) {
   console.log(otherProps);
   return (
     <InputStyled>
