@@ -21,7 +21,7 @@ export default function LoginForm() {
 
   // affichage (render)
   return (
-    <form action="submit" onSubmit={handleSubmit}>
+    <LoginFormStyled action="submit" onSubmit={handleSubmit}>
       <h1>Bienvenue chez nous !</h1>
       <br />
       <h2>Connectez-vous</h2>
@@ -33,6 +33,10 @@ export default function LoginForm() {
         required
       />
       <button>Accéder à mon espace</button>
-    </form>
+    </LoginFormStyled>
   );
 }
+
+const LoginFormStyled = styled.form`
+  background: green;
+`;
