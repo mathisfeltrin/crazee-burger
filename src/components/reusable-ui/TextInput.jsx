@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export default function TextInput({ value, onChange, Icon, ...otherProps }) {
-  console.log(otherProps);
   return (
     <InputStyled>
       {Icon && Icon}
@@ -31,7 +30,7 @@ const InputStyled = styled.div`
     border: none;
     font-size: 15px;
     color: #17161a;
-    /* width: 100%; */
+    width: 100%;
     /* display: flex; */
   }
 
