@@ -13,6 +13,7 @@ export default function Logo() {
 const LogoStyled = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
   transform: scale(2.5);
 
   h1 {
