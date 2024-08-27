@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../../../theme";
-import Main from "./Main";
-import Navbar from "./Navbar";
+import Main from "./Main/Main";
+import Navbar from "./Navbar/Navbar";
 
 export default function OrderPage() {
   // state
@@ -29,7 +29,6 @@ const OrderPageStyled = styled.div`
   align-items: center;
 
   .container {
-    background: red;
     height: 95vh;
     width: 1400px;
     display: flex;
